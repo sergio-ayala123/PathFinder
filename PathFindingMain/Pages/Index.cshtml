@@ -1,0 +1,108 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Maze Solver</h1>
+</div>
+
+<h1>@Model.Status</h1>
+
+<div style="display:grid; place-items:center">
+<table style="border:solid">
+  
+@for(int x = 0; x < @Model.Grid.Grid.GetLength(0); x++){
+    <tr>
+        
+    
+    @for(int y = 0; y < @Model.Grid.Grid.GetLength(1) ; y++)
+    {
+                if (@Model.Grid.Grid[x, y] == 'P')
+                {
+                    <td  style="border:solid;background-color:red; padding:0.5em">
+                        @Model.Grid.Grid[x,y]
+                    </td>
+                }
+                else if(@Model.Grid.Grid[x,y] == 'S' || @Model.Grid.Grid[x,y] == 'E')
+                {
+                    <td style="border:solid; background-color:green; padding:0.5em">
+                        @Model.Grid.Grid[x,y]
+                    </td>
+                }
+               
+                else if(@Model.Grid.Grid[x,y] == 'W')
+                {
+                <td style="border:solid; background-color:black; padding:0.5em">
+                    @Model.Grid.Grid[x,y]
+                    </td>
+
+                }
+                else if(@Model.Grid.Grid[x,y] == 'V')
+                {
+                    <td style="border:solid; background-color:yellow; padding:0.5em">
+                    @Model.Grid.Grid[x,y]
+                    </td>
+                }
+                else
+                {
+                    <td style="border:solid; padding:0.5em">
+                        @Model.Grid.Grid[x,y]
+                    </td>
+                }
+    }
+    </tr>
+}
+</table>
+
+
+<form method="post">
+
+    <label asp-for="UserX">Grid Rows</label>
+    <input  asp-for="UserX" />
+
+    <label asp-for="UserY">Grid Columns</label>
+    <input  asp-for="UserY" />
+
+    <button type="submit" asp-page-handler="Grid"></button>
+
+
+</form>
+
+</div>
+
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+
+        <div class = "col-6">
+
+<label asp-for="start.X">Start Row</label>
+<input class="form-control" asp-for="start.X" />
+
+<label asp-for="start.Y">Start Column</label>
+<input class="form-control" asp-for="start.Y" />
+
+        </div>
+        <div class="col-6">
+<label asp-for="end.X">End Row</label>
+<input class="form-control" asp-for="end.X" />
+
+<label asp-for="end.Y">End Column</label>
+<input class="form-control" asp-for="end.Y" />
+        </div>
+        </div>
+    </div>
+
+<button type="submit" asp-page-handler="BFS"> Breadth First Search</button>
+<button type="submit" asp-page-handler="AStar"> A Star Search</button>
+</form>
+
+
+<form method="post">
+<input type="hidden" name="gridX" value="@Model.UserX" />
+<input type="hidden" name="gridY" value="@Model.UserY" />
+<button type="submit" asp-page-handler="CreateMaze"> Create a Maze</button>
+</form> 

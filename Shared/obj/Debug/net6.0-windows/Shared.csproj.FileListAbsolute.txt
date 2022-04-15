@@ -1,0 +1,15 @@
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\bin\Debug\net6.0-windows\Shared.exe
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\bin\Debug\net6.0-windows\Shared.deps.json
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\bin\Debug\net6.0-windows\Shared.runtimeconfig.json
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\bin\Debug\net6.0-windows\Shared.dll
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\bin\Debug\net6.0-windows\ref\Shared.dll
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\bin\Debug\net6.0-windows\Shared.pdb
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.csproj.AssemblyReference.cache
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.AssemblyInfoInputs.cache
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.AssemblyInfo.cs
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.csproj.CoreCompileInputs.cache
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.dll
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\ref\Shared.dll
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.pdb
+C:\Users\ventu\source\repos\PathFindingWebApp\Shared\obj\Debug\net6.0-windows\Shared.genruntimeconfig.cache
